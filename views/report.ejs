@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Report</title>
+
+    <!-- Your stylesheet will go here later -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="report-page">
+
+    <main>
+
+        <!-- Page Header -->
+        <header>
+            <h1>Interview Report</h1>
+            <p>AI-powered analysis of your interview performance.</p>
+        </header>
+
+
+        <!-- Overall Score -->
+        <section>
+            <h2>Overall Performance</h2>
+
+            <div>
+                <p>Overall Score</p>
+                <strong><%= report.overallScore %>/100</strong>
+            </div>
+
+            <div>
+                <h3>Final Feedback</h3>
+                <p><%= report.finalFeedback %></p>
+            </div>
+        </section>
+
+
+        <!-- Question-wise Scores -->
+        <section>
+            <h2>Question Performance</h2>
+
+            <ol>
+                <% report.questionScores.forEach((score, index) => { %>
+
+                    <li>
+                        <span>Question <%= index + 1 %></span>
+                        <strong><%= score %>/20</strong>
+                    </li>
+
+                <% }) %>
+            </ol>
+        </section>
+
+
+        <!-- Strengths -->
+        <section>
+            <h2>Your Strengths</h2>
+
+            <ul>
+                <% report.strengths.forEach((strength) => { %>
+
+                    <li>
+                        <%= strength %>
+                    </li>
+
+                <% }) %>
+            </ul>
+        </section>
+
+
+        <!-- Weak Areas -->
+        <section>
+            <h2>Areas to Improve</h2>
+
+            <ul>
+                <% report.weakAreas.forEach((area) => { %>
+
+                    <li>
+                        <%= area %>
+                    </li>
+
+                <% }) %>
+            </ul>
+        </section>
+
+
+        <!-- Improvement Tips -->
+        <section>
+            <h2>Improvement Tips</h2>
+
+            <ol>
+                <% report.improvementTips.forEach((tip) => { %>
+
+                    <li>
+                        <%= tip %>
+                    </li>
+
+                <% }) %>
+            </ol>
+        </section>
+
+
+        <!-- Recommended Topics -->
+        <section>
+            <h2>Recommended Topics</h2>
+
+            <ul>
+                <% report.recommendedTopics.forEach((topic) => { %>
+
+                    <li>
+                        <%= topic %>
+                    </li>
+
+                <% }) %>
+            </ul>
+        </section>
+
+
+        <!-- Actions -->
+        <section>
+            <h2>What Next?</h2>
+
+            <a href="/">Start a New Interview</a>
+        </section>
+
+    </main>
+
+</body>
+</html>

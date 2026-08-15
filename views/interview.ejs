@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interview</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body class="interview-page">
+    <h1>AI Interview</h1>
+
+    <p>Question <%= currentIndex + 1 %> / 5</p>
+
+    <h2><%= questions[currentIndex] %></h2>
+
+    <form action="/answer" method="POST">
+      <textarea
+        name="answer"
+        rows="8"
+        cols="60"
+        placeholder="Type your answer..."
+        required
+      ></textarea>
+
+      <br /><br />
+
+      <button type="submit">Next Question</button>
+    </form>
+  </body>
+</html>
