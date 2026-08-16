@@ -15,7 +15,7 @@ https://ai-interview-simulator-e0im.onrender.com
 
 The complete hackathon presentation explaining the **problem statement, solution, workflow, technology stack, prototype, future scope, and team** is available below.
 
-👉 **[View Project Presentation (PDF)](./docs/AI-Interview-Simulator-Presentation.pdf)**
+👉 **[View Project Presentation (PDF)](./docs/Demo.pdf)**
 
 The presentation is included in this repository for project evaluation and hackathon review.
 
