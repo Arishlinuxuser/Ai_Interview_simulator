@@ -11,7 +11,7 @@ https://ai-interview-simulator-e0im.onrender.com
 
 > The live demo is hosted on Render. On a free web service, the first request after a period of inactivity may take some time while the service starts.
 
-## 📊 Project Presentation
+## 📊 Project Presentation(PPT)
 
 The complete hackathon presentation explaining the **problem statement, solution, workflow, technology stack, prototype, future scope, and team** is available below.
 
